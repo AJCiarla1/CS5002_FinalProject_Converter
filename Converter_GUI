@@ -1,0 +1,63 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class ConverterGUI extends JFrame{
+    private JPanel mainPanel;
+    private JTextField toBeConverted_TextField;
+    private JLabel toBeConverted_Label;
+    private JButton convertButton;
+    private JTextField base_toBeConverted_TextField;
+    private JLabel currentBaseValueLabel;
+    private JTextField convertedResult_TextField;
+    private JTextField convertedResultBase_TextField;
+    private JLabel convertedResultLabel;
+    private JLabel convertedResultBaseLabel;
+    private JTextField desiredBaseValue_TextField;
+    private JLabel desiredBaseValueLabel;
+
+    public ConverterGUI(String title){
+        super(title);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setContentPane(mainPanel);
+        this.pack();
+
+        this.convertButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e the event to be processed
+             */
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //grab the text from the decimal text field
+
+                //convert to a binary number - double
+
+                //update the binary label
+
+                //binaryLabel.setText(+ "Binary Number");
+
+            }
+        });
+    }
+
+
+    public static void main(String[] args){
+        //JFrame frame = new ConverterGUI("Number Representation Converter");
+        JFrame frame = new ConverterGUI("NUMBER REPRESENTATION CONVERTER");
+        frame.setBackground(Color.CYAN);
+        frame.setSize(400, 300);
+        frame.setResizable(false);
+        frame.setBackground(Color.cyan);
+        frame.setVisible(true);
+        
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
+
+}
